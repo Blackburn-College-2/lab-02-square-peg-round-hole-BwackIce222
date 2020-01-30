@@ -3,19 +3,24 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package emptyjavaproject;
+
 
 /**
  *
- * @author paul.kline
+ * @author paul.kline/montreal.thomas
  */
-public class Main {
+import java.util.Scanner;
+public class Runner {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Rectangle rec1 = new Rectangle(2,5);
+        Square squ1 = new Square(2);
+        System.out.println(rec1);
+        System.out.println(squ1);
+        
     }
     
 }
