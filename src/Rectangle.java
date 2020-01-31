@@ -8,7 +8,7 @@
  *
  * @author montreal.thomas
  */
-public class Rectangle {
+public class Rectangle{
     private double length = 1;
     private double width = 1;
     
@@ -18,10 +18,14 @@ public class Rectangle {
    
         
     }
-    public Rectangle(double width, double length){
-        double w = width;
-        double l = length;
-        System.out.println("New rectangle: "+ w+" by "+l);
+    public Rectangle(double width, double length,String unit){
+        this.width = width;
+        this.length = length;  
+        Measurement recM1 = new Measurement(length,unit);
+        
+        Measurement recM2 = new Measurement(width,unit);
+        
+        System.out.println("New rectangle: " +recM2+ " by "+ recM1);
     }
     public double getLength(){
      return length ;  
@@ -37,6 +41,9 @@ public class Rectangle {
        double perimeter = 2*width+2*length;
        return perimeter;
    }
-            
+    @Override
+   public String toString(){
+      return "Rectangle of " + width + " by " + length; 
+   }        
     
 }

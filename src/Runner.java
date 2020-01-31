@@ -16,10 +16,11 @@ public class Runner {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Rectangle rec1 = new Rectangle(2,5);
+        Rectangle rec1 = new Rectangle(2,5,"inches");
         Square squ1 = new Square(2);
         System.out.println(rec1);
         System.out.println(squ1);
+        
         
     }
     
