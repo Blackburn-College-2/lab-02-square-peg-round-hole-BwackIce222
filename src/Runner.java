@@ -4,24 +4,27 @@
  * and open the template in the editor.
  */
 
-
 /**
  *
  * @author paul.kline/montreal.thomas
  */
 import java.util.Scanner;
+
 public class Runner {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Rectangle rec1 = new Rectangle(2,5,"inches");
-        Square squ1 = new Square(2);
+        Rectangle rec1 = new Rectangle(2, 5, "inches");
         System.out.println(rec1);
+        Square squ1 = new Square(2, "inches");
         System.out.println(squ1);
-        
-        
+        Ellipse ell1 = new Ellipse(4, 5);
+        Circle cir1 = new Circle(7.0);
+        System.out.println(rec1.getEfficiency());
+        System.out.println(squ1.getEfficiency());
+
     }
-    
+
 }

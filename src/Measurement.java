@@ -9,16 +9,17 @@
  * @author montreal.thomas
  */
 public class Measurement {
+
     private double value;
     private String unit;
-    
-    public Measurement(double value, String unit){
+
+    public Measurement(double value, String unit) {
         this.value = value;
-        this.unit = unit;   
+        this.unit = unit;
     }
-    
+
     @Override
-    public String toString(){
-        return value + " " + unit; 
+    public String toString() {
+        return value + " " + unit;
     }
 }

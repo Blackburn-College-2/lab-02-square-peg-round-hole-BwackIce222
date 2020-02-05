@@ -8,17 +8,20 @@
  *
  * @author montreal.thomas
  */
+public class Square extends Rectangle {
 
-public class Square extends Rectangle{
-    private double side;
-    
-    public Square(double side){
-        this.side = side;
-        System.out.println("New Square: "+side);
+    //private double side;
+    private Measurement squM1;
+
+    public Square(double side, String unit) {
+        //this.side = side;
+        squM1 = new Measurement(side, unit);
+        System.out.println("New Square: " + squM1);
     }
+
     @Override
-   public String toString(){
-     
-      return "Square of "+ side; 
-   }      
+    public String toString() {
+
+        return "Square of: " + squM1.toString();
+    }
 }
